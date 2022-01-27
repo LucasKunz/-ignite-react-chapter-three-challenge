@@ -1,1 +1,50 @@
-// TODO
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+
+  .seeMore {
+    background-color: transparent;
+    border: none;
+    color: var(--pink-500);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.postsContainer {
+  .post {
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: filter .2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+  }
+  .title {
+    color: var(--white);
+  }
+
+  .subtitle {
+    color: var(--gray-100);
+    margin-top: 10px;
+  }
+
+  .infos {
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .date, .author {
+    align-items: center;
+    color: var(--gray-200);
+    display: flex;
+    margin-right: 15px;
+
+    svg {
+      margin-right: 7px;
+    }
+  }
+}
+
