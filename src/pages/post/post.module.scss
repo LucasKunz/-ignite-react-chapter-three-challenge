@@ -1,1 +1,54 @@
-// TODO
+.banner {
+  height: 400px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 720px;
+
+  .title {
+    color: var(--white);
+    font-size: 48px;
+  }
+
+  .informations {
+    color: var(--gray-200);
+    display: flex;
+    margin-top: 25px;
+
+    span {
+      align-items: center;
+      color: var(--gray-200);
+      display: flex;
+      margin-right: 15px;
+
+      svg {
+        margin: 0 7px;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 60px;
+
+    .postHeading {
+      color: var(--white);
+      font-size: 38px;
+      margin-bottom: 40px;
+    }
+
+    .postContent {
+      color: var(--gray-200);
+
+      ul {
+        list-style: none;
+      }
+
+      li, p {
+        margin: 10px 0;
+      }
+    }
+  }
+}
